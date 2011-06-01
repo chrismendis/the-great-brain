@@ -1,5 +1,7 @@
 %w(rubygems sinatra compass haml).each { |lib| require lib }
 
+set :haml, { :format => :html5 }
+
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html
