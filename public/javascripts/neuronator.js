@@ -3,10 +3,10 @@ var Neuronator = function() {
     {
       "node": {
         "id": 1,
-        "url": "http://love-hate.heroku.com",
+        "url": "http://localhost:8080",
         "root": "/",
-        "get": "/pong",
-        "post": "/generate",
+        "receive": "/pong",
+        "send": "/generate",
         "author": "jen",
         "personal_url": "http://ednapiranha.com",
         "tags": "emotion"
@@ -28,14 +28,20 @@ var Neuronator = function() {
       var ping_state = 1;
       $.each(node_list, function(idx, n) {
         console.log('pinging node ...', n.node.url);
-        $.post(n.node.url + n.node.post, { ping: ping_state }, function(data) {
-          console.log(data);
-          $('.result li[data-id="' + n.node.id + '"]').html(data);
-          sleep(2000);
-          var pong = $.get(n.node.get, function(data) {
-            ping_state = parseInt(data, 10);
-            console.log("pong state ", ping_state);
-          });
+        var url = n.node.url + n.node.send;
+        console.log(url);
+        $.ajax({
+          type: 'POST',
+          url: url,
+          data: { ping: ping_state },
+          success: function(data) {
+            alert(data);
+            $('.result li[data-id="' + n.node.id + '"]').append(data);
+          },
+          error: function(data, statusText) {
+            console.log(statusText);
+          },
+          dataType: "json"
         });
       });
     }
