@@ -28,10 +28,10 @@ var Neuronator = function() {
       var ping_state = 1;
       $.each(node_list, function(idx, n) {
         console.log('pinging node ...', n.node.url);
-        var url = n.node.url + n.node.send;
+        var url = n.node.url + n.node.send + "?callback=?";
         console.log(url);
         $.ajax({
-          type: 'POST',
+          type: 'GET',
           url: url,
           data: { ping: ping_state },
           success: function(data) {
@@ -41,7 +41,7 @@ var Neuronator = function() {
           error: function(data, statusText) {
             console.log(statusText);
           },
-          dataType: "json"
+          dataType: "jsonp"
         });
       });
     }
