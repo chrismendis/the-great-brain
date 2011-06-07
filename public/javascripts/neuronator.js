@@ -34,7 +34,6 @@ var Neuronator = function() {
           type: 'POST',
           url: url,
           data: { ping: ping_state },
-          contentType: "application/json",
           success: function(data) {
             alert(data);
             $('.result li[data-id="' + n.node.id + '"]').append(data);
