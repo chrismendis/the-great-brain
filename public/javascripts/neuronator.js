@@ -36,7 +36,7 @@ var Neuronator = function() {
           data: { ping: ping_state },
           success: function(data) {
             alert(data);
-            $('.result li[data-id="' + n.node.id + '"]').append(data);
+            $('.result li[data-id="' + n.node.id + '"]').append("(" + data + ")");
           },
           error: function(data, statusText) {
             console.log(statusText);
