@@ -1,39 +1,65 @@
-h1 
-  margin: 0 auto
-  background-image: url('/images/brain.jpg')
-  background-repeat: no-repeat
-  height: 325px
-  padding-top: 190px
-  text-align: center
-  width: 334px
-  
-  span
-    font-family: Arial, sans-serif
-    font-size: 1.5em
-    font-weight: normal
-    display: block
-    background-color: #444
-    opacity: 0.5
-    color: #fff
-
-.result
-  position: absolute
-  top: 0px
+body
   margin: 0px
   padding: 0px
-  left: 0px
-  
-  li
-    list-style-type: none
-    
-    img
-      position: absolute
-      z-index: 2
-      top: 0px
-      left: 0px
 
-    iframe
-      width: 150px
+  h1 
+    margin: 0 auto
+    background-image: url('/images/brain.jpg')
+    background-repeat: no-repeat
+    height: 325px
+    padding-top: 190px
+    text-align: center
+    width: 334px
+  
+    span
+      font-family: Arial, sans-serif
+      font-size: 1.5em
+      font-weight: normal
+      display: block
+      background-color: #444
+      opacity: 0.5
+      color: #fff
+
+  .result
+    float: left
+    margin: 0px
+    padding: 0px
+  
+    li
+      margin: 0px
+      padding: 0px
+      list-style-type: none
+      float: left
       height: 150px
-      overflow: hidden
-      border: 0px
+      width: 150px
+      position: relative
+    
+      a
+        display: block
+        position: absolute
+        bottom: 0px
+        width: 144px
+        overflow: hidden
+        text-decoration: none
+        left: 0px
+        background-color: #000
+        opacity: 0.8
+        display: none
+        color: #eee
+        font-family: Arial, sans-serif
+        font-size: 11px
+        text-transform: uppercase
+        z-index: 3
+        padding: 3px
+        
+      img
+        position: absolute
+        z-index: 2
+        top: 0px
+        left: 0px
+
+      iframe
+        width: 150px
+        height: 150px
+        overflow: hidden
+        border: 0px
