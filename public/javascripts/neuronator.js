@@ -28,12 +28,12 @@ var Neuronator = function() {
       var ping_state = 1;
       $('.result').everyTime(3000, function(i) {
         $.each(node_list, function(i, n) {
-        //  console.log('pinging node ...', node_list[i].url);
+          console.log('pinging node ...', node_list[i].url);
           var url = node_list[i].url + node_list[i].send + "?callback=?";
           $('.result li[data-id="' + node_list[i].id + '"] img').remove();
           $.getJSON(url, { ping: ping_state }, function(data) {
             $('.result li[data-id="' + node_list[i].id + '"]').append(data.result);
-          //  console.log(node_list[i].url + node_list[i].receive);
+            console.log(node_list[i].url + node_list[i].receive);
             $.getJSON(node_list[i].url + node_list[i].receive + "?callback=?", function(data) { 
               ping_state = parseInt(data.result, 10); 
             });
