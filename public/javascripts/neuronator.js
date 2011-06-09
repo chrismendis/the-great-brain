@@ -2,7 +2,7 @@ var Neuronator = function() {
   var node_list = [
     {
       "id": 1,
-      "url": "http://love-hate.heroku.com",
+      "url": "http://localhost:4567",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
