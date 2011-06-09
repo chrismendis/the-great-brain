@@ -1,4 +1,4 @@
-require 'brain'
+require './brain'
  
 set :run, true
 
