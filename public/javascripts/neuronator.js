@@ -37,7 +37,6 @@ var Neuronator = function() {
             $.getJSON(node_list[i].url + node_list[i].receive + "?callback=?", function(data) { 
               ping_state = parseInt(data.result, 10); 
             });
-          //  console.log(ping_state);
           });
         });
       });
