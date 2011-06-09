@@ -9,13 +9,23 @@ var Neuronator = function() {
       "author": "jen",
       "personal_url": "http://ednapiranha.com",
       "tags": "emotion"
+    },
+    {
+      "id": 2,
+      "url": "http://hollow-robot-198.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "commercials"
     }
   ];
   
   var self = {
     getNodeList: function() {
       var result = $(".result");
-      var node_frame = $("<li data-id=''><iframe src=''></iframe><a href='' target='_blank'></a></li>");
+      var node_frame = $("<li data-id=''><iframe src=''></iframe><a href='' target='_blank'></a><p></p></li>");
       $.each(node_list, function(i, n) {
         var sibling_node_frame = node_frame.clone();
         sibling_node_frame.find('a').attr('href', node_list[i].personal_url).text(node_list[i].author);
@@ -35,6 +45,7 @@ var Neuronator = function() {
           debug ? debug_box_send.text('pinging node ... ' + node_list[i].url + ' ' + i) : '';
           
           $('.result li[data-id="' + node_list[i].id + '"] img').remove();
+          $('.result li[data-id="' + node_list[i].id + '"] p').remove();
           
           $.getJSON(url, { ping: ping_state }, function(data) {
             $('.result li[data-id="' + node_list[i].id + '"]').append(data.result);

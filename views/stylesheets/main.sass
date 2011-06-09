@@ -1,7 +1,7 @@
 body
   margin: 0px
   padding: 0px
-
+  
   h1 
     margin: 0 auto
     background-image: url('/images/brain.jpg')
@@ -21,6 +21,7 @@ body
       color: #fff
 
   .result
+    font-family: Arial, sans-serif
     float: left
     margin: 0px
     padding: 0px
@@ -52,11 +53,19 @@ body
         z-index: 3
         padding: 3px
         
-      img
+      img, p
         position: absolute
         z-index: 2
         top: 0px
         left: 0px
+      
+      p
+        font-size: 22px
+        padding: 3px
+        line-height: 20px
+        color: #fff
+        opacity: 0.6
+        text-transform: uppercase
 
       iframe
         width: 150px
@@ -72,7 +81,6 @@ body
     clear: both
     margin-top: 10px
     width: 90%
-    font-family: Arial, sans-serif
     padding: 5px
     
     h2
