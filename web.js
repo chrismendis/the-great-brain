@@ -34,6 +34,6 @@ app.get('/', function(req, res){
   });
 });
 
-app.listen(80, null);
+app.listen();
 console.log("Express server listening on port %d", app.address().port);
 //app.run(parseInt(process.env.PORT || 8000), null)
