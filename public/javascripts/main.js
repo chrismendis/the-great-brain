@@ -8,7 +8,7 @@ $(function() {
   }
   brain.neuronator = Neuronator();
   brain.neuronator.getNodeList();
-  brain.neuronator.pingNode();
+  brain.neuronator.pingNode(1, 1);
   
   $('.result li').hover(
     function() {

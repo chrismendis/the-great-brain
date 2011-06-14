@@ -1,4 +1,9 @@
 var Neuronator = function() {
+  var pong_assign_path = "/pong";
+  
+  var debug_box_send = $('.debug p.send');
+  var debug_box_receive = $('.debug p.receive');
+  
   var node_list = [
     {
       "id": 1,
@@ -19,8 +24,53 @@ var Neuronator = function() {
       "author": "jen",
       "personal_url": "http://ednapiranha.com",
       "tags": "commercials"
+    },
+    {
+      "id": 3,
+      "url": "http://love-hate.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "emotion"
+    },
+    {
+      "id": 4,
+      "url": "http://hollow-robot-198.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "commercials"
+    },
+    {
+      "id": 5,
+      "url": "http://love-hate.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "emotion"
+    },
+    {
+      "id": 6,
+      "url": "http://hollow-robot-198.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "commercials"
     }
   ];
+  
+  var randomizeNode = function() {
+    var node_id = Math.ceil(Math.random()*node_list.length);
+    return node_id;
+  };
   
   var self = {
     getNodeList: function() {
@@ -34,30 +84,37 @@ var Neuronator = function() {
         result.append(sibling_node_frame);
       });
     },
-    pingNode: function() {
-      var ping_state = 1;
-      var debug_box_send = $('.debug p.send');
-      var debug_box_receive = $('.debug p.receive');
+    pingNode: function(ping_state, node_id) {    
+      var node_reference = parseInt(node_id, 10) - 1;
+      console.log('node reference ' + node_reference);
+      var url_send = node_list[node_reference].url + node_list[node_reference].send + "?callback=?";
+      var url_receive = node_list[node_reference].url + node_list[node_reference].receive + "?callback=?";
       
-      $('.result').everyTime(3000, function(i) {
-        $.each(node_list, function(i, n) {
-          var url = node_list[i].url + node_list[i].send + "?callback=?";
-          debug ? debug_box_send.text('pinging node ... ' + node_list[i].url + ' ' + i) : '';
-          
-          $('.result li[data-id="' + node_list[i].id + '"] img').remove();
-          $('.result li[data-id="' + node_list[i].id + '"] p').remove();
-          
-          $.getJSON(url, { ping: ping_state }, function(data) {
-            $('.result li[data-id="' + node_list[i].id + '"]').append(data.result);
-            
-            $.getJSON(node_list[i].url + node_list[i].receive + "?callback=?", function(data) { 
-              ping_state = parseInt(data.result, 10); 
-              
-              debug ? debug_box_receive.text(ping_state) : '';
-            });
-          });
+      $('.result li img, .result li p').remove();
+      
+      debug ? debug_box_send.text('pinging node ... ' + node_list[node_reference].url + ' ' + node_id) : '';
+      $('.result li[data-id="' + node_list[node_reference].id + '"] img').remove();
+      $('.result li[data-id="' + node_list[node_reference].id + '"] p').remove();
+      console.log('send url ' + url_send);
+      console.log('ping node id ' + node_id);
+      $.getJSON(url_send, { ping: ping_state }, function(data) {
+        $('.result li[data-id="' + node_id + '"]').append(data.result);
+        $.getJSON(url_receive, function(d) {
+          console.log('receive url ' + url_receive);
+          pong_state = parseInt(d.result, 10);
+          brain.neuronator.pongNode(pong_state, node_list[node_reference].id);
+          debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) : '';
         });
       });
+    },
+    updatePingNode: function(ping_state) {
+      brain.neuronator.pingNode(ping_state, randomizeNode());
+    },
+    pongNode: function(pong_state, node_id) {
+      pong_state = parseInt(pong_state, 10);
+      console.log('pong state ' + pong_state);
+      console.log('pong node id ' + node_id);
+      brain.neuronator.updatePingNode(pong_state);
     }
   };
   
