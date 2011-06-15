@@ -114,6 +114,16 @@ var Neuronator = function() {
       "author": "jen2",
       "personal_url": "http://ednapiranha.com",
       "tags": "text"
+    },
+    {
+      "id": 12,
+      "url": "http://floating-warrior-161.heroku.com",
+      "root": "/",
+      "receive": "/pong",
+      "send": "/generate",
+      "author": "jen2",
+      "personal_url": "http://ednapiranha.com",
+      "tags": "text"
     }
   ];
   
