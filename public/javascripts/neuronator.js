@@ -37,7 +37,7 @@ var Neuronator = function() {
     },
     {
       "id": 4,
-      "url": "http://glowing-sky-477.heroku.com",
+      "url": "http://floating-warrior-161.heroku.com",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
@@ -57,7 +57,7 @@ var Neuronator = function() {
     },
     {
       "id": 6,
-      "url": "http://hollow-robot-198.heroku.com",
+      "url": "http://floating-warrior-161.heroku.com",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
