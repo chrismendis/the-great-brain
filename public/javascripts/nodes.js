@@ -131,7 +131,7 @@ var node_list = [
   },
   {
     "id": 14,
-    "url": "http://floating-warrior-161.heroku.com",
+    "url": "http://love-hate.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
@@ -151,7 +151,7 @@ var node_list = [
   },
   {
     "id": 16,
-    "url": "http://glowing-sky-477.heroku.com",
+    "url": "http://love-hate.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
