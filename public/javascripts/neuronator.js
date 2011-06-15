@@ -11,9 +11,9 @@ var Neuronator = function() {
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen1",
       "personal_url": "http://ednapiranha.com",
-      "tags": "emotion"
+      "tags": "image"
     },
     {
       "id": 2,
@@ -21,39 +21,39 @@ var Neuronator = function() {
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen2",
       "personal_url": "http://ednapiranha.com",
-      "tags": "commercials"
+      "tags": "text"
     },
     {
       "id": 3,
-      "url": "http://love-hate.heroku.com",
+      "url": "http://glowing-sky-477.heroku.com",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen3",
       "personal_url": "http://ednapiranha.com",
-      "tags": "emotion"
+      "tags": "audio"
     },
     {
       "id": 4,
-      "url": "http://hollow-robot-198.heroku.com",
+      "url": "http://glowing-sky-477.heroku.com",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen4",
       "personal_url": "http://ednapiranha.com",
-      "tags": "commercials"
+      "tags": "audio"
     },
     {
       "id": 5,
-      "url": "http://love-hate.heroku.com",
+      "url": "http://glowing-sky-477.heroku.com",
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen5",
       "personal_url": "http://ednapiranha.com",
-      "tags": "emotion"
+      "tags": "audio"
     },
     {
       "id": 6,
@@ -61,9 +61,9 @@ var Neuronator = function() {
       "root": "/",
       "receive": "/pong",
       "send": "/generate",
-      "author": "jen",
+      "author": "jen6",
       "personal_url": "http://ednapiranha.com",
-      "tags": "commercials"
+      "tags": "text"
     }
   ];
   
