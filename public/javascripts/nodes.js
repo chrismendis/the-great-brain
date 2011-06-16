@@ -125,9 +125,9 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
-    "personal_url": "http://ednapiranha.com",
-    "tags": "audio"
+    "author": "kalupa",
+    "personal_url": "http://controllercode.com",
+    "tags": "text"
   },
   {
     "id": 14,
@@ -175,8 +175,8 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
-    "personal_url": "http://ednapiranha.com",
-    "tags": "audio"
+    "author": "kalupa",
+    "personal_url": "http://controllercode.com",
+    "tags": "text"
   }
 ];
