@@ -126,7 +126,7 @@ var node_list = [
     "receive": "/pong",
     "send": "/generate",
     "author": "kalupa",
-    "personal_url": "http://controllercode.com",
+    "personal_url": "http://karrupa.com",
     "tags": "text"
   },
   {
@@ -176,7 +176,7 @@ var node_list = [
     "receive": "/pong",
     "send": "/generate",
     "author": "kalupa",
-    "personal_url": "http://controllercode.com",
+    "personal_url": "http://karrupa.com",
     "tags": "text"
   }
 ];
