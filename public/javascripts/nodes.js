@@ -61,12 +61,12 @@ var node_list = [
   },
   {
     "id": 7,
-    "url": "http://openvein.com:4567",
+    "url": "http://hollow-mountain-667.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "John C. Worsley",
-    "personal_url": "http://openvein.com",
+    "author": "Edna Piranha",
+    "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
   {
@@ -151,12 +151,12 @@ var node_list = [
   },
   {
     "id": 16,
-    "url": "http://openvein.com:4567",
+    "url": "http://hollow-mountain-667.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "John C. Worsley",
-    "personal_url": "http://openvein.com",
+    "author": "Edna Piranha",
+    "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
   {

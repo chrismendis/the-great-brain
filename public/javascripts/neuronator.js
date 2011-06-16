@@ -20,28 +20,32 @@ var Neuronator = function() {
       });
     },
     pingNode: function(ping_state, node_id) {    
-      var node_reference = parseInt(node_id, 10) - 1;
+      try {
+        var node_reference = parseInt(node_id, 10) - 1;
       
-      console.log('node reference ' + node_reference);
+        console.log('node reference ' + node_reference);
       
-      var url_send = node_list[node_reference].url + node_list[node_reference].send + "?callback=?";
-      var url_receive = node_list[node_reference].url + node_list[node_reference].receive + "?callback=?";
+        var url_send = node_list[node_reference].url + node_list[node_reference].send + "?callback=?";
+        var url_receive = node_list[node_reference].url + node_list[node_reference].receive + "?callback=?";
       
-      $('.result li img, .result li p, .result li audio, .result li video').remove();
+        $('.result li img, .result li p, .result li audio, .result li video').remove();
       
-      debug ? debug_box_send.text('pinging node ... ' + node_list[node_reference].url + ' ' + node_id) : '';
+        debug ? debug_box_send.text('pinging node ... ' + node_list[node_reference].url + ' ' + node_id) : '';
 
-      console.log('send url ' + url_send);
-      console.log('ping node id ' + node_id);
+        console.log('send url ' + url_send);
+        console.log('ping node id ' + node_id);
       
-      $.getJSON(url_send, { ping: ping_state }, function(data) {
-        $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').append(data.result);
-        $.getJSON(url_receive, function(d) {
-          pong_state = parseInt(d.result, 10);
-          brain.neuronator.pongNode(pong_state, node_list[node_reference].id);
-          debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) : '';
+        $.getJSON(url_send, { ping: ping_state }, function(data) {
+          $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').append(data.result);
+          $.getJSON(url_receive, function(d) {
+            pong_state = parseInt(d.result, 10);
+            brain.neuronator.pongNode(pong_state, node_list[node_reference].id);
+            debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) : '';
+          });
         });
-      });
+      } catch(err) {
+        console.log('node server down');
+      }
     },
     updatePingNode: function(ping_state) {
       brain.neuronator.pingNode(ping_state, randomizeNode());
