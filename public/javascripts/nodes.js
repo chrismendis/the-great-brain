@@ -111,7 +111,7 @@ var node_list = [
   },
   {
     "id": 12,
-    "url": "http://glowing-sky-477.heroku.com/",
+    "url": "http://glowing-sky-477.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
