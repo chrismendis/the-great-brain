@@ -121,7 +121,7 @@ var node_list = [
   },
   {
     "id": 13,
-    "url": "http://hollow-mountain-667.heroku.com",
+    "url": "http://high-earth-684.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
@@ -171,7 +171,7 @@ var node_list = [
   },
   {
     "id": 18,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://high-earth-684.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
