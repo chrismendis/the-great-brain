@@ -31,13 +31,13 @@ var node_list = [
   },
   {
     "id": 4,
-    "url": "http://floating-warrior-161.heroku.com",
+    "url": "http://smooth-mist-685.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen4",
-    "personal_url": "http://ednapiranha.com",
-    "tags": "audio"
+    "author": "Thomas Cheng",
+    "personal_url": "http://blog.thomascheng.com",
+    "tags": "image"
   },
   {
     "id": 5,
@@ -131,13 +131,13 @@ var node_list = [
   },
   {
     "id": 14,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://smooth-mist-685.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen6",
-    "personal_url": "http://ednapiranha.com",
-    "tags": "text"
+    "author": "Thomas Cheng",
+    "personal_url": "http://blog.thomascheng.com",
+    "tags": "image"
   },
   {
     "id": 15,
