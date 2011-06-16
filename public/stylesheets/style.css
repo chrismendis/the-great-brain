@@ -61,6 +61,7 @@ body {
 .wrapper p.watch {
   font-size: 2em;
   padding-bottom: 0px;
+  text-shadow: #888 1px 1px 3px;
   text-transform: uppercase;
 }
 
