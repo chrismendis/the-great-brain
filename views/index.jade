@@ -1,6 +1,27 @@
-ul(class='result')
+div(class='wrapper')
+  h1 The Great Brain 
 
-div(class='debug')
-  h2 Debug ON
-  p(class='send')
-  p(class='receive')
+  p An experimental simulation of remote node communication
+  
+  p <a href="/brain?debug=true">Observe Now</a>
+  
+  h2 What is it?
+  
+  p The Great Brain is a project that sends and receives boolean data between remote servers. Each remote server the brain connects to is considered a 'node', which responds with one of the following: text, an image, audio or a video.
+  
+  p In this simple format, the key is to keep the code as simple as possible and vary the HTML content response as much as possible.
+  
+  h2 How can I contribute?
+  
+  p Feel free to fork any of our sample nodes below and replace with your respective content. The sample nodes are all developed in <a href="http://www.sinatrarb.com">Sinatra</a>, <a href="http://haml-lang.com">Haml</a> and <a href="http://sass-lang.com">Sass</a>. Once you are happy with your node, deploy to a server where we can access the site. An easy place to deploy to is <a href="http://www.heroku.com">Heroku</a>.
+  
+  section
+    h2 Github Repositories
+    
+    ul
+      li The Great Brain repository: <a href="https://github.com/ednapiranha/the-great-brain">the-great-brain</a>
+      li Sample Node (Text): <a href="https://github.com/ednapiranha/message-from-our-sponsors">message-from-our-sponsors</a>
+      li Sample Node (Image): <a href="https://github.com/ednapiranha/love-hate">love-hate</a>
+      li Sample Node (Audio): <a href="https://github.com/ednapiranha/ambient">ambient</a>
+    
+  

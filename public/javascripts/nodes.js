@@ -158,5 +158,25 @@ var node_list = [
     "author": "jen5",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
+  },
+  {
+    "id": 17,
+    "url": "http://glowing-sky-477.heroku.com",
+    "root": "/",
+    "receive": "/pong",
+    "send": "/generate",
+    "author": "jen3",
+    "personal_url": "http://ednapiranha.com",
+    "tags": "audio"
+  },
+  {
+    "id": 18,
+    "url": "http://love-hate.heroku.com",
+    "root": "/",
+    "receive": "/pong",
+    "send": "/generate",
+    "author": "jen5",
+    "personal_url": "http://ednapiranha.com",
+    "tags": "audio"
   }
 ];

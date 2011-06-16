@@ -30,7 +30,13 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Great Brain'
+    pageType: 'index'
+  });
+});
+
+app.get('/brain', function(req, res){
+  res.render('brain', {
+    pageType: 'brain'
   });
 });
 

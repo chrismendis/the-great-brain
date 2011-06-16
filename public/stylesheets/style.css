@@ -1,12 +1,89 @@
-body {
+body, html {
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
 }  
-.result {
-  font-family: Arial, sans-serif;
-  float: left;
+
+.wrapper {
+  font-family: Arial, sans-serif; 
+  width: 860px;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 1.4em;
+  background-color: #eee;
+}
+
+.wrapper h1, .wrapper h2 {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  padding: 5px;
+  background-image: url('http://love-hate.heroku.com/images/snow.gif');
+  height: 40px;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 0px;
+  text-shadow: #000 1px 1px 3px;
+  font-family: "Monaco", "Lucida Console"; 
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+.wrapper h2 {
+  background-image: none;
+  margin-top: 50px;
+  color: #777;
+  margin-bottom: 0px;
+  font-size: 1.2em;
+  text-shadow: none;
+  padding-left: 20px;
+}
+
+.wrapper p, .wrapper ul li {
+  font-size: 0.9em;
+  color: #333;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  background-image: none;
+  background-color: #fff;
+  color: #111;
+  padding: 2px;
+  font-size: 1.1em;
+}
+
+.wrapper a:hover {
+  background-image: url('http://love-hate.heroku.com/images/snow.gif');
+  text-shadow: #000 1px 1px 3px;
+  color: #fff;
+}
+
+.wrapper ul {
   margin: 0px;
   padding: 0px;
+  padding-left: 20px;
+}
+
+.wrapper ul li {
+  padding: 5px;
+  list-style-type: none;
+}
+
+.result, .debug {
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px;
+  width: 900px;
+  clear: both;
+  display: block;
 }  
 .result li {
   margin: 0px;
@@ -59,18 +136,20 @@ iframe {
   display: none;
   background-color: #000;
   color: #fff;
-  float: left;
-  clear: both;
-  margin-top: 10px;
-  width: 90%;
-  padding: 5px;
+  border-top: 5px solid #fff;
 }    
 .debug h2 {
-  font-size: 12px;
+  font-size: 1em;
   font-weight: normal;
   text-transform: uppercase;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .debug p {
-  font-size: 10px;
+  font-size: 0.9em;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
