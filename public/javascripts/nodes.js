@@ -5,7 +5,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen1",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "image"
   },
@@ -15,7 +15,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen2",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "text"
   },
@@ -25,7 +25,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen3",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
@@ -45,7 +45,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
@@ -55,19 +55,19 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen6",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "text"
   },
   {
     "id": 7,
-    "url": "http://floating-warrior-161.heroku.com",
+    "url": "http://openvein.com:4567",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen6",
-    "personal_url": "http://ednapiranha.com",
-    "tags": "text"
+    "author": "John C. Worsley",
+    "personal_url": "http://openvein.com",
+    "tags": "audio"
   },
   {
     "id": 8,
@@ -75,7 +75,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
@@ -85,7 +85,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen1",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "image"
   },
@@ -95,7 +95,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
@@ -105,7 +105,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen2",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "text"
   },
@@ -115,7 +115,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen2",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "text"
   },
@@ -125,7 +125,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "kalupa",
+    "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
     "tags": "text"
   },
@@ -145,18 +145,18 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen6",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "text"
   },
   {
     "id": 16,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://openvein.com:4567",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen5",
-    "personal_url": "http://ednapiranha.com",
+    "author": "John C. Worsley",
+    "personal_url": "http://openvein.com",
     "tags": "audio"
   },
   {
@@ -165,7 +165,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "jen3",
+    "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
     "tags": "audio"
   },
@@ -175,7 +175,7 @@ var node_list = [
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "kalupa",
+    "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
     "tags": "text"
   }

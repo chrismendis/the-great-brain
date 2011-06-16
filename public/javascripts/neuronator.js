@@ -10,7 +10,7 @@ var Neuronator = function() {
   var self = {
     getNodeList: function() {
       var result = $(".result");
-      var node_frame = $("<li data-id=''><iframe src=''></iframe><a href='' target='_blank'></a><p></p></li>");
+      var node_frame = $("<li data-id='' class='free'><iframe src=''></iframe><a href='' target='_blank'></a><p></p></li>");
       $.each(node_list, function(i, n) {
         var sibling_node_frame = node_frame.clone();
         sibling_node_frame.find('a').attr('href', node_list[i].personal_url).text(node_list[i].author);
@@ -35,7 +35,7 @@ var Neuronator = function() {
       console.log('ping node id ' + node_id);
       
       $.getJSON(url_send, { ping: ping_state }, function(data) {
-        $('.result li[data-id="' + node_id + '"]').append(data.result);
+        $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').append(data.result);
         $.getJSON(url_receive, function(d) {
           pong_state = parseInt(d.result, 10);
           brain.neuronator.pongNode(pong_state, node_list[node_reference].id);
