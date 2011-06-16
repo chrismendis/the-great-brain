@@ -50,13 +50,39 @@ body, html {
   padding-right: 20px;
 }
 
+.wrapper section {
+  background-color: #bbb;
+  padding-bottom: 10px;
+}
+
+.wrapper section h2 {
+  color: #fff;
+}
+
+.wrapper p.watch {
+  font-size: 2em;
+  padding-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.wrapper p.watch a {
+  background-color: #57bbef;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .wrapper a {
   text-decoration: none;
   background-image: none;
-  background-color: #fff;
+  background-color: #ccc;
   color: #111;
   padding: 2px;
   font-size: 1.1em;
+}
+
+.wrapper section a {
+  background-color: #fff;
 }
 
 .wrapper a:hover {
