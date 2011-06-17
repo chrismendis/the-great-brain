@@ -39,24 +39,24 @@ var Neuronator = function() {
           $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').append(data.result);
           $.getJSON(url_receive, function(d) {
             pong_state = parseInt(d.result, 10);
-            brain.neuronator.pongNode(pong_state, node_list[node_reference].id);
-            debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) : '';
+            brain.neuronator.pongNode(pong_state, node_list[node_reference].id, node_list[node_reference].time);
+            debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) + " : " + node_list[node_reference].time + " ms" : '';
           });
         });
       } catch(err) {
-        console.log('node server down');
+        console.log('node server down ' + err.description);
       }
     },
     updatePingNode: function(ping_state) {
       brain.neuronator.pingNode(ping_state, randomizeNode());
     },
-    pongNode: function(pong_state, node_id) {
+    pongNode: function(pong_state, node_id, time) {
       pong_state = parseInt(pong_state, 10);
       
       console.log('pong state ' + pong_state);
       console.log('pong node id ' + node_id);
       
-      brain.neuronator.updatePingNode(pong_state);
+      setTimeout("brain.neuronator.updatePingNode(pong_state)", time);
     }
   };
   

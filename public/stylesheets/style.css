@@ -120,8 +120,9 @@ body {
   height: 150px;
   width: 150px;
   position: relative;
+  overflow: hidden;
 }    
-.result li  a {
+.result li a {
   display: block;
   position: absolute;
   bottom: 0px;
@@ -146,7 +147,7 @@ body {
   left: 0px;
 }     
 .result li p {
-  font-size: 22px;
+  font-size: 0.9em;
   padding: 3px;
   line-height: 20px;
   color: #fff;

@@ -7,6 +7,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -17,6 +18,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "text"
   },
   {
@@ -27,6 +29,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 2000,
     "tags": "audio"
   },
   {
@@ -37,6 +40,7 @@ var node_list = [
     "send": "/generate",
     "author": "Thomas Cheng",
     "personal_url": "http://blog.thomascheng.com",
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -47,6 +51,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "audio"
   },
   {
@@ -57,6 +62,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "text"
   },
   {
@@ -67,16 +73,18 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "audio"
   },
   {
     "id": 8,
-    "url": "http://glowing-sky-477.heroku.com",
+    "url": "http://gentle-earth-856.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 2000,
     "tags": "audio"
   },
   {
@@ -87,6 +95,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -97,6 +106,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "audio"
   },
   {
@@ -107,6 +117,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "text"
   },
   {
@@ -117,6 +128,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "text"
   },
   {
@@ -127,6 +139,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
+    "time": 1000,
     "tags": "text"
   },
   {
@@ -137,6 +150,7 @@ var node_list = [
     "send": "/generate",
     "author": "Thomas Cheng",
     "personal_url": "http://blog.thomascheng.com",
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -147,26 +161,29 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "text"
   },
   {
     "id": 16,
-    "url": "http://hollow-mountain-667.heroku.com",
+    "url": "http://love-hate.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 1000,
     "tags": "audio"
   },
   {
     "id": 17,
-    "url": "http://glowing-sky-477.heroku.com",
+    "url": "http://gentle-earth-856.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
+    "time": 2000,
     "tags": "audio"
   },
   {
@@ -177,6 +194,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
+    "time": 1000,
     "tags": "text"
   }
 ];
