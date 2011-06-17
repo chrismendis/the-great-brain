@@ -111,12 +111,12 @@ var node_list = [
   },
   {
     "id": 11,
-    "url": "http://hollow-robot-198.heroku.com",
+    "url": "http://freezing-sky-937.herokuapp.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "Edna Piranha",
-    "personal_url": "http://ednapiranha.com",
+    "author": "Paul Kalupnieks",
+    "personal_url": "http://karrupa.com",
     "time": 500,
     "tags": "text"
   },
