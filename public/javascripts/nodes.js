@@ -67,14 +67,14 @@ var node_list = [
   },
   {
     "id": 7,
-    "url": "http://hollow-mountain-667.heroku.com",
+    "url": "http://freezing-sky-937.herokuapp.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
-    "author": "Edna Piranha",
-    "personal_url": "http://ednapiranha.com",
-    "time": 1000,
-    "tags": "audio"
+    "author": "Paul Kalupnieks",
+    "personal_url": "http://karrupa.com",
+    "time": 500,
+    "tags": "text"
   },
   {
     "id": 8,
@@ -95,7 +95,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 600,
+    "time": 300,
     "tags": "image"
   },
   {
@@ -117,7 +117,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 1000,
+    "time": 500,
     "tags": "text"
   },
   {
@@ -139,7 +139,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
-    "time": 1000,
+    "time": 500,
     "tags": "text"
   },
   {
@@ -161,7 +161,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 1000,
+    "time": 500,
     "tags": "text"
   },
   {
@@ -172,7 +172,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 600,
+    "time": 500,
     "tags": "audio"
   },
   {
