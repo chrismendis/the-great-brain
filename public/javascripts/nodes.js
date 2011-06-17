@@ -51,7 +51,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 1000,
+    "time": 2500,
     "tags": "audio"
   },
   {
@@ -106,7 +106,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 1000,
+    "time": 2500,
     "tags": "audio"
   },
   {
