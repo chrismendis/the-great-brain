@@ -29,7 +29,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 2500,
+    "time": 2800,
     "tags": "audio"
   },
   {
@@ -51,7 +51,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 2500,
+    "time": 2800,
     "tags": "audio"
   },
   {
@@ -62,7 +62,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 3500,
+    "time": 3800,
     "tags": "text"
   },
   {
@@ -73,7 +73,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
-    "time": 500,
+    "time": 800,
     "tags": "text"
   },
   {
@@ -106,7 +106,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 2500,
+    "time": 2800,
     "tags": "audio"
   },
   {
@@ -117,7 +117,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
-    "time": 500,
+    "time": 800,
     "tags": "text"
   },
   {
@@ -128,7 +128,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 2500,
+    "time": 2800,
     "tags": "text"
   },
   {
@@ -139,7 +139,7 @@ var node_list = [
     "send": "/generate",
     "author": "Paul Kalupnieks",
     "personal_url": "http://karrupa.com",
-    "time": 500,
+    "time": 800,
     "tags": "text"
   },
   {
@@ -161,7 +161,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 3500,
+    "time": 3800,
     "tags": "text"
   },
   {
@@ -172,7 +172,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 500,
+    "time": 800,
     "tags": "audio"
   },
   {
