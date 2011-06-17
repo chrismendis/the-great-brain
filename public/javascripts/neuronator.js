@@ -40,7 +40,7 @@ var Neuronator = function() {
           $.getJSON(url_receive, function(d) {
             pong_state = parseInt(d.result, 10);
             brain.neuronator.pongNode(pong_state, node_list[node_reference].id, node_list[node_reference].time);
-            debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state) + " : " + node_list[node_reference].time + " ms" : '';
+            debug ? debug_box_receive.text("node_id, ping value = " + node_list[node_reference].id + ", " + ping_state + " : " + node_list[node_reference].time + " ms") : '';
           });
         });
       } catch(err) {
