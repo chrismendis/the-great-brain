@@ -7,7 +7,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 500,
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -95,7 +95,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 500,
+    "time": 1000,
     "tags": "image"
   },
   {
@@ -172,7 +172,7 @@ var node_list = [
     "send": "/generate",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 500,
+    "time": 1000,
     "tags": "audio"
   },
   {
