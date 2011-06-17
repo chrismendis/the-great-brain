@@ -56,7 +56,7 @@ var Neuronator = function() {
       console.log('pong state ' + pong_state);
       console.log('pong node id ' + node_id);
       
-      setTimeout("brain.neuronator.updatePingNode(pong_state)", time);
+      setTimeout("brain.neuronator.updatePingNode(pong_state)", time - 200);
     }
   };
   
