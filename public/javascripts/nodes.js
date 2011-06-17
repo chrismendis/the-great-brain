@@ -188,7 +188,7 @@ var node_list = [
   },
   {
     "id": 18,
-    "url": "http://high-earth-684.heroku.com",
+    "url": "http://hollow-robot-198.heroku.com",
     "root": "/",
     "receive": "/pong",
     "send": "/generate",
