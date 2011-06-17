@@ -115,6 +115,7 @@ body {
 .result li {
   margin: 0px;
   padding: 0px;
+  background-image: url('http://love-hate.heroku.com/images/snow.gif');
   list-style-type: none;
   float: left;
   height: 150px;
@@ -147,11 +148,12 @@ body {
   left: 0px;
 }     
 .result li p {
-  font-size: 0.9em;
+  font-size: 1em;
+  background-color: #000;
+  display: inline;
   padding: 3px;
-  line-height: 1.1em;
+  line-height: 1.2em;
   color: #fff;
-  opacity: 0.6;
   text-transform: uppercase;
 }     
 iframe {
