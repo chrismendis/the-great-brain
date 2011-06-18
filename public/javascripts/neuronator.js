@@ -68,7 +68,7 @@ var Neuronator = function() {
     },
     pongNode: function(pong_state, node_id, time) {
       pong_state = parseInt(pong_state, 10);
-      isNaN(pong_state) ? pong_state = 0 : 'å';
+      isNaN(pong_state) ? pong_state = 0 : '';
       $('.result li[data-id="' + node_id + '"]').removeClass('busy').addClass('free');
       console.log('pong state ' + pong_state);
       console.log('pong node id ' + node_id);
