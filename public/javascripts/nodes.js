@@ -65,11 +65,11 @@ var node_list = [
   },
   {
     "id": 9,
-    "url": "http://love-hate.heroku.com",
+    "url": "http://empty-stone-648.heroku.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 300,
-    "tags": "image"
+    "time": 1500,
+    "tags": "image, audio"
   },
   {
     "id": 10,
@@ -105,11 +105,11 @@ var node_list = [
   },
   {
     "id": 14,
-    "url": "http://smooth-mist-685.heroku.com",
-    "author": "Thomas Cheng",
-    "personal_url": "http://blog.thomascheng.com",
-    "time": 1000,
-    "tags": "image"
+    "url": "http://empty-stone-648.heroku.com",
+    "author": "Edna Piranha",
+    "personal_url": "http://ednapiranha.com",
+    "time": 1500,
+    "tags": "image, audio"
   },
   {
     "id": 15,
