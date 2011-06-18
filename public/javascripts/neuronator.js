@@ -7,6 +7,20 @@ var Neuronator = function() {
     return node_id;
   };
   
+  var stripBadTagsAndAttributes = function(data) {
+    var whitelist = ["src", "autoplay", "style"];
+    var clean_data = $(data);
+    clean_data.each(function() {
+      var attributes = this.attributes;
+      $.each(attributes, function(i, n) {
+        var attribute = attributes[i];
+        $.inArray(attribute.name, whitelist) == -1 ? clean_data.removeAttr(attr.name) : '';
+      });
+    });
+    clean_data.find('style').remove();
+    return clean_data;
+  };
+  
   var self = {
     getNodeList: function() {
       var result = $(".result");
@@ -25,8 +39,8 @@ var Neuronator = function() {
       
         console.log('node reference ' + node_reference);
       
-        var url_send = node_list[node_reference].url + node_list[node_reference].send + "?callback=?";
-        var url_receive = node_list[node_reference].url + node_list[node_reference].receive + "?callback=?";
+        var url_send = node_list[node_reference].url + "/generate?callback=?";
+        var url_receive = node_list[node_reference].url + "/pong?callback=?";
       
         free_nodes.find('img, p, audio, video').remove();
       
@@ -36,7 +50,9 @@ var Neuronator = function() {
         console.log('ping node id ' + node_id);
       
         $.getJSON(url_send, { ping: ping_state }, function(data) {
-          $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').html(data.result);
+          var result = stripBadTagsAndAttributes(data.result);
+          
+          $('.result li[data-id="' + node_id + '"]').addClass('busy').removeClass('free').html(result);
           $.getJSON(url_receive, function(d) {
             pong_state = parseInt(d.result, 10);
             brain.neuronator.pongNode(pong_state, node_list[node_reference].id, node_list[node_reference].time);

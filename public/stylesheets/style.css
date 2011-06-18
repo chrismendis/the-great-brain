@@ -5,6 +5,11 @@ body {
   background-color: #111;
 }  
 
+code {
+  white-space: pre;
+  overflow: auto;
+}
+
 .wrapper {
   font-family: Arial, sans-serif; 
   width: 860px;
@@ -41,7 +46,7 @@ body {
   padding-left: 20px;
 }
 
-.wrapper p, .wrapper ul li {
+.wrapper p, .wrapper li {
   font-size: 0.9em;
   color: #333;
   padding: 5px;
@@ -54,8 +59,16 @@ body {
   padding-bottom: 10px;
 }
 
+.wrapper section.howto {
+  background-color: #30d0de;
+}
+
 .wrapper section h2 {
   color: #fff;
+}
+
+.wrapper section.howto p, .wrapper section.howto li {
+  color: #111;
 }
 
 .wrapper p.watch {
@@ -91,16 +104,27 @@ body {
   color: #fff;
 }
 
-.wrapper ul {
+.wrapper ul, .wrapper ol {
   margin: 0px;
   padding: 0px;
   padding-left: 20px;
   padding-bottom: 50px;
 }
 
+
 .wrapper ul li {
   padding: 5px;
   list-style-type: none;
+}
+
+.wrapper ol {
+  margin-left: 20px;
+  padding-bottom: 0px;
+}
+
+.wrapper ol li {
+  padding: 5px;
+  list-style-type: decimal;
 }
 
 .result, .debug {

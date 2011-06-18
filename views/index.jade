@@ -15,9 +15,34 @@ div(class='wrapper')
   
   p Feel free to fork any of our sample nodes below and replace with your respective content. The sample nodes are all developed in <a href="http://www.sinatrarb.com">Sinatra</a>, <a href="http://haml-lang.com">Haml</a> and <a href="http://sass-lang.com">Sass</a>. Once you are happy with your node, deploy to a server where we can access the site. An easy place to deploy to is <a href="http://www.heroku.com">Heroku</a>.
   
+  section(class='howto')
+    h2 Contribution Requirements
+    
+    p You can create a node in any language that you want and host on any server that we can access. The only requirements we need are two API JSONP (GET) calls - one returning HTML and the other returning a 0 or 1. The API specifics are outlined below:
+    
+    ol
+      li
+        Create one API call at "/generate?callback=?" that returns in the following JSON response:
+        pre
+          code
+            {
+              "result": "&lt;img src='http://myawesomenode.com/images/somethingcrazy.gif' /&gt;"
+            }
+      li
+        Create one API call at "/pong?callback=?" that returns JSON as either 0 or 1. Randomization of these two values is ideal, but it is up to you to decide how you want to determine the response value. The format should be as follows:
+        pre
+          code
+            {
+              "result": 0
+            }
+    
+    p After you create the node, the easiest way to let us know is to create a public repository on <a href="http://github.com">Github</a>, fork <a href="https://github.com/ednapiranha/the-great-brain">The Great Brain</a> and send a pull request to add your node to our main <a href="https://github.com/ednapiranha/the-great-brain/blob/master/public/javascripts/nodes.js">node list</a>.
+    
+    p Currently we will support any HTML tags, except &lt;script&gt; and &lt;style&gt;. Our whitelist of attributes currently include 'src', 'autoplay' and 'style'. If your node is found to be problematic (e.g. you're attempting to do bad things or the server is down), we will remove it from the master list until it is fixed.
+          
   h2 Technical Notes
   
-  p This currently works best with the latest version of <a href="http://www.mozilla.com/firefox/fx">Firefox</a>. It tends to crash in Chrome and Safari after a short period of time when the &lt;audio&gt; tag is involved.
+  p This currently works best with the latest version of <a href="http://www.mozilla.com/firefox/fx">Firefox</a>.
   
   section
     h2 Github Repositories
