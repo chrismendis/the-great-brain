@@ -17,10 +17,10 @@ var node_list = [
   },
   {
     "id": 3,
-    "url": "http://glowing-sky-477.heroku.com",
+    "url": "http://morning-beach-732.heroku.com",
     "author": "Edna Piranha",
     "personal_url": "http://ednapiranha.com",
-    "time": 2800,
+    "time": 3000,
     "tags": "audio"
   },
   {
@@ -142,6 +142,14 @@ var node_list = [
     "personal_url": "http://ednapiranha.com",
     "time": 1500,
     "tags": "image, audio"
+  },
+  {
+    "id": 19,
+    "url": "http://morning-beach-732.heroku.com",
+    "author": "Edna Piranha",
+    "personal_url": "http://ednapiranha.com",
+    "time": 3000,
+    "tags": "audio"
   }
   
 ];
