@@ -26,14 +26,10 @@ var Neuronator = function() {
       var result = $(".result");
       var node_frame = $("<li data-id='' class='free'><a href='' target='_blank'></a><p></p></li>");
       $.each(node_list, function(i, n) {
-        debug_box_send.text('Loading node: ' + node_list[i].url);
-        $.get(node_list[i].url, function() {
-          debug_box_send.text('Loaded!');
-          var sibling_node_frame = node_frame.clone();
-          sibling_node_frame.find('a').attr('href', node_list[i].personal_url).text(node_list[i].author);
-          sibling_node_frame.attr('data-id', node_list[i].id);
-          result.append(sibling_node_frame);
-        });
+        var sibling_node_frame = node_frame.clone();
+        sibling_node_frame.find('a').attr('href', node_list[i].personal_url).text(node_list[i].author);
+        sibling_node_frame.attr('data-id', node_list[i].id);
+        result.append(sibling_node_frame);
       });
     },
     pingNode: function(ping_state, node_id) {    
