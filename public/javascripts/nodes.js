@@ -150,6 +150,14 @@ var node_list = [
     "personal_url": "http://ednapiranha.com",
     "time": 3000,
     "tags": "audio"
+  },
+  {
+    "id": 20,
+    "url": "http://smooth-mist-685.heroku.com",
+    "author": "Thomas Cheng",
+    "personal_url": "http://blog.thomascheng.com",
+    "time": 1000,
+    "tags": "image"
   }
   
 ];
